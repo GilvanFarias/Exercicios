@@ -1,8 +1,11 @@
 #include <iostream>
+#include <locale>
 
 using namespace std;
 
 int main(){
+	
+	setlocale(LC_ALL, "ptb");
 	
 	int num, resto;
 	
@@ -13,10 +16,10 @@ int main(){
 	
 	if(resto == 0){
 		
-		cout << "O número " << num << "é par";
+		cout << "O número digitado é: " << num << " par";
 		
 	}else{
 		
-		cout << "O número " << num << " é impar"; 
+		cout << "O número digitado é: " << num << " impar"; 
 	}
 }
